@@ -18,7 +18,7 @@ const passport = require("passport");
 const LocalStrategy = require("passport-local");
 const User = require("./models/user.model.js");
 
-const port = 3000;
+const port = process.env.PORT || 4000;
 
 main()
   .then(() => {
